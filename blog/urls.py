@@ -15,4 +15,6 @@ name='post_list' は、ビューを識別するために使われるURL の名�
 
 urlpatterns = [
     path('', views.post_list, name='post_list'),
+    path('post/<int:pk>/', views.post_detail, name='post_detail'),
 ]
+
